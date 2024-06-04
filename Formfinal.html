@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+	<meta charset="utf-8">
+	<title>Examen formularios</title>
+	<meta name="author" content="Jreyes">
+	<meta name="description" content="Examen de creacion de formularios html">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/cssfinal.css">
+	<link rel="icon" type="image/x-icon" href="css/unimonserrate.ico"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Raleway:wght@300&display=swap" rel="stylesheet">    
+</head>
+
+<body>
+	<header></header>
+	
+    <section style="background-color:#3C44A3 ">
+            <center>
+            <img src="https://www.unimonserrate.edu.co/wp-content/uploads/2022/08/Unimonserrate_Mesa-de-trabajo-1-copia-11.png" width="30%">
+            </center>
+    </section>
+    
+    <section>
+    <center>
+        <div class="form" id="div1">
+            <h1>Sistema de Registro de Empleados</h1>
+            
+            <form method="post" action="registrardatos_empleado.php">
+                <fieldset>
+                    <legend>Datos básicos</legend>
+                    
+                    <label for="id">ID Empleado:</label>
+                    <input type="number" id="id" name="id_empleado" max="999999" placeholder="max 6" required> <br>
+
+                    <label for="nombre">Nombres:</label>
+                    <input type="text" id="nombre" name="nombres" maxlength="30" placeholder="Nombre" required> <br>
+
+                    <label for="apellido"> Apellidos:</label>
+                    <input type="text" id="apellido" name="apellidos" maxlength="30" placeholder="Apellido" required> <br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" maxlength="50" placeholder="alguien@algo.com" required> <br>
+
+                    <label for="telefono">Número de teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="12345"  size="14" required> <br>
+
+                    <label for="contratacion"> Fecha de contratación:</label>
+                    <input type="date" id="contratacion" name="fecha_contratacion" placeholder="00/00/0000" required> <br>
+
+                    <label for="trabajoid">ID Trabajo:</label>
+                    <input type="text" id="trabajoid" name="id_trabajo" maxlength="10" placeholder="max 10" required> <br>
+
+                    <label for="salario">Salario:</label>
+                    <input type="number" id="salario" name="salario" max="99999999" placeholder="10000" required> <br>
+
+                    <label for="comosion">Comisión:</label>
+                    <input type="number" id="comision" name="comision" max="99999999" placeholder="2000" required> <br>
+
+                    <label for="manager">ID Manager:</label>
+                    <input type="number" id="manager" name="id_manager" max="999999" placeholder="max 6" required> <br>
+
+                    <label for="departamento">ID Departamento:</label>
+                    <select id="departamento" name="id_departamento">
+                        <option></option>
+                        <option value="1"> 1. Bodega</option>
+                        <option value="2"> 2. Secretaría</option>
+                        <option value="3"> 3. Ingeniería</option>
+                        <option value="4"> 4. Otros</option>
+                    </select><br>
+                    
+                    <input type="hidden" name="confirmar" value="confirmado">
+                    
+                </fieldset>
+                
+                <input type="submit" value="Siguiente">
+                
+            </form>
+        </div>
+    </center>
+    </section>
+    
+    
+    
+	<footer>
+        <i>
+            <p style="text-align: right"> &#169 Jairo Alejandro Reyes Duarte </p>
+        </i>
+    </footer>
+    
+    
+	<script type="text/javascript" src=""></script>
+</body>
+
+</html>

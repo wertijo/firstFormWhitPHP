@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+	<meta charset="utf-8">
+	<title>Examen formularios</title>
+	<meta name="author" content="Jreyes">
+	<meta name="description" content="Example description">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/cssfinal.css">
+	<link rel="icon" type="image/x-icon" href="css/unimonserrate.ico"/>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Raleway:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<header></header>
+	
+    <section style="background-color:#3C44A3 ">
+            <center>
+            <img src="https://www.unimonserrate.edu.co/wp-content/uploads/2022/08/Unimonserrate_Mesa-de-trabajo-1-copia-11.png" width="30%">
+            </center>
+    </section>
+    
+    
+    <section>
+    <center>
+        <div class="form" id="div1">
+            <form method="post" action="registrardatos_adicional.php">
+                <fieldset>
+                    <legend> Datos complementarios </legend>
+                    
+                    <label for="id">ID Empleado</label>
+                    <input type="number" id="id" name="id_empleado" required><br>
+                    
+                    <label for="foto">Foto de perfil</label>
+                    <input accept="image/*" type="file" id="foto" name="foto_perfil" required> <br>
+                    
+                    <label for="color">Color favorito</label>
+                    <input type="color" id="color" name="color_fav" required> <br>
+                    
+                    <label for="edad">Edad</label>
+                    <input type="number" id="edad" min="18" max="170" name="edad" required> <br>
+                    
+                    <label for="ingles">Nivel de inglés</label>
+                    <input type="range" id="ingles" min="0" max="5" list="marcas" value="0" name="nivel_ingles" required>
+                    <datalist id="marcas">
+                        <option value="0">
+                        <option value="1">
+                        <option value="2">
+                        <option value="3">
+                        <option value="4">
+                        <option value="5">
+                    </datalist>
+                    <br>
+                    
+                    <label for="link">Link de su antigua empresa</label>
+                    <input type="url" id="link" size="12" name="link_empresa" required>
+                    <br>
+                    
+                    <label for="pw">Contraseña</label>
+                    <input type="password" id="pw" size="15" name="contraseña" required>
+                    <br>
+                    
+                    <input type="hidden" value="confirmado" name="confirmar">
+                    
+                </fieldset>
+                <input type="submit" value="Finalizar/Enviar">
+            </form>          
+        </div>
+    </center>
+    </section>
+    
+    
+	<footer style="text-align: right">
+        <i>
+        <p style="text-align: right"> &#169 Jairo Alejandro Reyes Duarte </p>
+        </i>
+        
+    </footer>
+	<script type="text/javascript" src=""></script>
+</body>
+
+</html>

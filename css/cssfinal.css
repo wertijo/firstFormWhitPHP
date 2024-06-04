@@ -1,0 +1,29 @@
+body{
+    background-image: url(fondo.jpg);
+    margin: 0px;
+    font-family: 'Raleway', sans-serif;
+}
+
+h1{
+    font-family: 'Playfair Display', serif;
+}
+
+input{
+    padding: 4px;
+    margin: 9px;
+}
+
+select{
+    padding: 4px;
+    margin: 9px;
+}
+
+#div1{
+    margin: 10px;
+}
+
+fieldset{
+    margin: 50px;
+    height: auto;
+    width: 350px;
+}
